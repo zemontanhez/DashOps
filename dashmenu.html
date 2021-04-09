@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/estilo.css">
+
+    <script src="/js/menu.js"></script>
+    
+    <title>Menu</title>
+</head>
+<body onload="validaLogin()">
+    <div id="user"></div>
+    <button onclick="logout()">Logout</button>
+    <div id="foto" class="fotoperfil"></div>
+    <br>
+    <input type="date" id="dataInicio">
+    <input type="date" id="dataFinal">
+    <button class = "btn btn-primary" onclick="gerarRelatorio()">Gerar relatório de eventos</button>
+    <br>
+    <button class = "btn btn-primary" onclick="relacaoAlarme()">Relação de alarmes</button>
+    <br>
+    <div id="tabela"></div>
+</body>
+</html>
